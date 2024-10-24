@@ -1,13 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://bmxfc62h16xar"]
+[gd_scene load_steps=12 format=3 uid="uid://bmxfc62h16xar"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_8go7g"]
 [ext_resource type="Script" path="res://GameCamera.gd" id="1_atcv1"]
 [ext_resource type="PackedScene" uid="uid://b1oxnqd531xom" path="res://player.tscn" id="1_cybwt"]
 [ext_resource type="PackedScene" uid="uid://di18t5mkufyqj" path="res://movingplatform.tscn" id="4_wrnd3"]
+[ext_resource type="Script" path="res://play_again_button.gd" id="5_drorj"]
 [ext_resource type="Texture2D" uid="uid://dqjfr1asstjkg" path="res://orig2.png" id="5_q1sdx"]
 [ext_resource type="Texture2D" uid="uid://djslddw05nkgm" path="res://orig.png" id="5_vc1gt"]
 [ext_resource type="Texture2D" uid="uid://c72r7ap7fvg4o" path="res://origbig.png" id="6_fn8ca"]
-[ext_resource type="Texture2D" uid="uid://dit5bmotjlydw" path="res://céu.jpeg" id="8_roov6"]
+[ext_resource type="Texture2D" uid="uid://b0e20vmmq60ob" path="res://céu.jpeg" id="8_roov6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cy7d1"]
 size = Vector2(360, 20)
@@ -85,6 +86,7 @@ horizontal_alignment = 1
 [node name="PlayAgainButton" type="Button" parent="CanvasLayer/GameOverContainer/VBoxContainer"]
 layout_mode = 2
 text = "Play Again"
+script = ExtResource("5_drorj")
 
 [node name="QuitButton" type="Button" parent="CanvasLayer/GameOverContainer/VBoxContainer"]
 layout_mode = 2

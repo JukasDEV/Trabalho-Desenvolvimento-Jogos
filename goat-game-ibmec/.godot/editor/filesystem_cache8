@@ -1,0 +1,19 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1729798981
+3.png::CompressedTexture2D::2400015342234065562::1729798916::1729798982::1::::<><>::
+céu.jpeg::CompressedTexture2D::4151084411408326969::1729798916::1729798982::1::::<><>::
+Cubes - Green 128x128.png::CompressedTexture2D::5783387149204316395::1729798916::1729798982::1::::<><>::
+GameCamera.gd::GDScript::-1::1729798916::0::1::::<>Camera2D<>::
+icon2.svg::CompressedTexture2D::45876079394805563::1729798916::1729798982::1::::<><>::
+icon.svg::CompressedTexture2D::4677165768273984942::1729798916::1729798982::1::::<><>::
+icons8-minecraft-grama-cubo-100.png::CompressedTexture2D::1567187018284048020::1729798916::1729798982::1::::<><>::
+movingplatform.gd::GDScript::-1::1729798916::0::1::::<>AnimatableBody2D<>::
+movingplatform.tscn::PackedScene::7776485807354065841::1729798916::0::1::::<><>::res://movingplatform.gd<>uid://wlflupnttvxk::::res://icons8-minecraft-grama-cubo-100.png
+orig2.png::CompressedTexture2D::8301198258984327798::1729798916::1729798982::1::::<><>::
+orig.png::CompressedTexture2D::7828793880429062376::1729798916::1729798982::1::::<><>::
+origbig.png::CompressedTexture2D::7075711922078353720::1729798916::1729798982::1::::<><>::
+player.gd::GDScript::-1::1729798916::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4241652459402716884::1729798916::0::1::::<><>::uid://b7vwib2t5bqsc::::res://icon.svg<>res://player.gd
+README.md::TextFile::-1::1729798916::0::1::::<><>::
+world.gd::GDScript::-1::1729798916::0::1::::<>Node2D<>::
+world.tscn::PackedScene::3276476322532118053::1729798916::0::1::::<><>::res://world.gd<>res://GameCamera.gd<>uid://b1oxnqd531xom::::res://player.tscn<>uid://di18t5mkufyqj::::res://movingplatform.tscn<>uid://dqjfr1asstjkg::::res://orig2.png<>uid://djslddw05nkgm::::res://orig.png<>uid://c72r7ap7fvg4o::::res://origbig.png<>uid://dit5bmotjlydw::::res://céu.jpeg
