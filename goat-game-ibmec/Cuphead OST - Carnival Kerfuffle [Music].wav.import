@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtf4vtdx343e4"
+path="res://.godot/imported/Cuphead OST - Carnival Kerfuffle [Music].wav-101d89fb3b46b669206ed71289ea0a59.sample"
+
+[deps]
+
+source_file="res://Cuphead OST - Carnival Kerfuffle [Music].wav"
+dest_files=["res://.godot/imported/Cuphead OST - Carnival Kerfuffle [Music].wav-101d89fb3b46b669206ed71289ea0a59.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

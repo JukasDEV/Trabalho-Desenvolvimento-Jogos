@@ -1,14 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://bmxfc62h16xar"]
+[gd_scene load_steps=14 format=3 uid="uid://bmxfc62h16xar"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_8go7g"]
 [ext_resource type="Script" path="res://GameCamera.gd" id="1_atcv1"]
 [ext_resource type="PackedScene" uid="uid://b1oxnqd531xom" path="res://player.tscn" id="1_cybwt"]
+[ext_resource type="AudioStream" uid="uid://b2ystn5gcsw7t" path="res://coin.wav" id="4_78ly1"]
 [ext_resource type="PackedScene" uid="uid://di18t5mkufyqj" path="res://movingplatform.tscn" id="4_wrnd3"]
 [ext_resource type="Script" path="res://play_again_button.gd" id="5_drorj"]
 [ext_resource type="Texture2D" uid="uid://dqjfr1asstjkg" path="res://orig2.png" id="5_q1sdx"]
 [ext_resource type="Texture2D" uid="uid://djslddw05nkgm" path="res://orig.png" id="5_vc1gt"]
 [ext_resource type="Texture2D" uid="uid://c72r7ap7fvg4o" path="res://origbig.png" id="6_fn8ca"]
-[ext_resource type="Texture2D" uid="uid://b0e20vmmq60ob" path="res://céu.jpeg" id="8_roov6"]
+[ext_resource type="Texture2D" uid="uid://dit5bmotjlydw" path="res://céu.jpeg" id="8_roov6"]
+[ext_resource type="AudioStream" uid="uid://dtf4vtdx343e4" path="res://Cuphead OST - Carnival Kerfuffle [Music].wav" id="11_ffgck"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cy7d1"]
 size = Vector2(360, 20)
@@ -45,6 +47,10 @@ shape = SubResource("RectangleShape2D_i7yr7")
 
 [node name="Player" parent="." instance=ExtResource("1_cybwt")]
 position = Vector2(188, 701)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("4_78ly1")
+volume_db = 1.12
 
 [node name="Platforms" type="Node2D" parent="."]
 
@@ -115,6 +121,11 @@ z_index = -1
 position = Vector2(167, -2917)
 scale = Vector2(4.43924, 5.14043)
 texture = ExtResource("8_roov6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_ffgck")
+volume_db = 1.2
+autoplay = true
 
 [connection signal="body_entered" from="GameCamera/Killbox" to="Player" method="_on_killbox_body_entered"]
 [connection signal="game_over" from="Player" to="." method="_on_player_game_over"]
